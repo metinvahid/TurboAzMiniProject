@@ -1,0 +1,14 @@
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.AssemblyInfoInputs.cache
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.AssemblyInfo.cs
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.csproj.CoreCompileInputs.cache
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\bin\Debug\net8.0\Turboazmini.exe
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\bin\Debug\net8.0\Turboazmini.deps.json
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\bin\Debug\net8.0\Turboazmini.runtimeconfig.json
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\bin\Debug\net8.0\Turboazmini.dll
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\bin\Debug\net8.0\Turboazmini.pdb
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.dll
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\refint\Turboazmini.dll
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.pdb
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\Turboazmini.genruntimeconfig.cache
+C:\Users\TUF\OneDrive\Desktop\Turboaz\Turboazmini\Turboazmini\obj\Debug\net8.0\ref\Turboazmini.dll

@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace Turboazmini.Enums
 {
     public enum  TypeOfBan
+
     {
-        Sedan = 1,
+        Sedan=1,
         Suv,
         Cupe,
-        Cabrio
+        Cabrio,
+        Universal
     }
 }

@@ -8,7 +8,7 @@ namespace Turboazmini.Enums
 {
     public enum  TypeOfFuel
     {
-        Benzin = 1,
+        Benzin=1,
         Dizel,
         Hybrid,
         Super,

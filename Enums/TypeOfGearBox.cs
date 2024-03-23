@@ -8,7 +8,7 @@ namespace Turboazmini.Enums
 {
     public enum TypeOfGearBox
     {
-        Manual =1,
+        Manual=1,
         Automatic,
         Variator,
         Robotic

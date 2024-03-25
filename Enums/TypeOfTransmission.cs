@@ -9,7 +9,7 @@ namespace Turboazmini.Enums
     public enum  TypeOfTransmission
     {
         Arxa = 1,
-        On,
+        Ön,
         Tam
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Turboazmini")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48a287ce1b121dc6bbc389cf3be6ca524639e592")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa507860ca78c3103de450f9d607f34d4b65647")]
 [assembly: System.Reflection.AssemblyProductAttribute("Turboazmini")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Turboazmini")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

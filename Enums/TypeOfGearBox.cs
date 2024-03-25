@@ -8,9 +8,9 @@ namespace Turboazmini.Enums
 {
     public enum TypeOfGearBox
     {
-        Manual=1,
-        Automatic,
+        Mexaniki=1,
+        Avtomat,
         Variator,
-        Robotic
+        Robotlaşdırılmış
     }
 }

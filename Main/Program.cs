@@ -150,9 +150,9 @@ namespace Turboazmini.Main
             {
                 foreach (var item in query)
                 {
-                    Console.WriteLine($"Info : Id-{item.Id}\nBan növü-{item.Banner}\nYürüş-{item.March}\n" +
-                        $"Sürətlər qutusu-{item.GearBox}\nYanacaq növü-{item.FuelType}\nModeli-{item.ModelName}\n" +
-                        $"Marka{item.BrandName}\nQiyməti-{item.Price}\nÖtürücü növü-{item.Transmission}\n");
+                    Console.WriteLine($"Info : Id-{item.Id}\nBan növü - {item.Banner}\nYürüş - {item.March}\n" +
+                        $"Sürətlər qutusu - {item.GearBox}\nYanacaq növü - {item.FuelType}\nModeli - {item.ModelName}\n" +
+                        $"Marka - {item.BrandName}\nQiyməti - {item.Price}\nÖtürücü növü - {item.Transmission}\n");
 
                 }
             }
@@ -227,9 +227,9 @@ namespace Turboazmini.Main
                         };
             foreach (var item in query.ToList())
             {
-                Console.WriteLine($"Information: Id-{item.Id}, Ban növü-{item.Banner}, Yürüş - {item.March}" +
-                  $" Sürətlər qutusu növü-{item.GearBox}, Yanacaq növü-{item.FuelType}, Modeli - {item.ModelName}" +
-                  $" Marka-{item.BrandName}, Qiyməti-{item.Price}, Ötürücü növü-{item.Transmission}");
+                Console.WriteLine($"Information: Id-{item.Id}\nBan növü - {item.Banner}\nYürüş - {item.March}\n " +
+                  $" Sürətlər qutusu növü - {item.GearBox}\nYanacaq növü - {item.FuelType}\n Modeli - {item.ModelName}\n " +
+                  $" Marka - {item.BrandName}\nQiyməti - {item.Price}\nÖtürücü növü - {item.Transmission}\n");
             }
         l1:
             var announcementId = Helper.ReadInt("Düzəliş etmək istədiyiniz Elanın Id-sini daxil edin !", "Səhv daxil etdiniz!");
@@ -262,7 +262,7 @@ namespace Turboazmini.Main
             if (model == null)
             {
                 Console.WriteLine($"{modelId}-Id li model siyahıda yoxdur", "Zəhmət olmasa yenidən cəhd edin");
-                goto l2;
+                goto l3;
 
             }
         l4:
@@ -271,7 +271,7 @@ namespace Turboazmini.Main
             if (march < 0)
             {
                 Console.WriteLine("Yürüş 0-dan az ola bilməz!");
-                goto l3;
+                goto l4;
             }
 
 
@@ -293,7 +293,7 @@ namespace Turboazmini.Main
             else
             {
                 Console.WriteLine("Səhv seçim etdiniz yeniden cəhd edin!");
-                goto l4;
+                goto l5;
 
             }
 
@@ -312,16 +312,17 @@ namespace Turboazmini.Main
             else
             {
                 Console.WriteLine("Səhv daxil etdiniz yenidən cəhd edin!");
-                goto l5;
+                goto l6;
             }
 
             TypeOfTransmission typeOfTransmission;
 
-        l7:
+      
             foreach (var item in Enum.GetValues(typeof(TypeOfTransmission)))
             {
-                Console.WriteLine($"{item}-{item}");
+                Console.WriteLine($"{(int)item}-{item}");
             }
+        l7:
             var typeOfTransmissionNum = Helper.ReadInt("Ötürücü növünü seçin", "Səhv daxil etdiniz!");
             if (Enum.IsDefined(typeof(TypeOfTransmission), typeOfTransmissionNum))
             {
@@ -330,14 +331,14 @@ namespace Turboazmini.Main
             else
             {
                 Console.WriteLine("Səhv daxil etdiniz yenidən cəhd edin!");
-                goto l6;
+                goto l7;
             }
 
             TypeOfBan typeOfBan;
         l8:
             foreach (var item in Enum.GetValues(typeof(TypeOfBan)))
             {
-                Console.WriteLine($"{item}-{item}");
+                Console.WriteLine($"{(int)item}-{item}"); 
             }
             var typeOfBanNum = Helper.ReadInt("Ban növünü seçin!", "Səhv daxil etdiniz! ");
             if (Enum.IsDefined(typeof(TypeOfBan), typeOfBanNum))
@@ -347,7 +348,7 @@ namespace Turboazmini.Main
             else
             {
                 Console.WriteLine("Səhv daxil etdiniz yenidən cəhd edin!");
-                goto l7;
+                goto l8;
             }
 
             announcement.Banner = typeOfBan;
@@ -363,9 +364,9 @@ namespace Turboazmini.Main
 
             foreach (var item in query.ToList())
             {
-                Console.WriteLine($"Information: Id-{item.Id}, Ban növü-{item.Banner}, Yürüş - {item.March}" +
-                  $" Sürətlər qutusu növü-{item.GearBox}, Yanacaq növü-{item.FuelType}, Modeli - {item.ModelName}" +
-                  $" Marka-{item.BrandName}, Qiyməti-{item.Price}, Ötürücü növü-{item.Transmission}");
+                Console.WriteLine($"Info : Id-{item.Id}\nBan növü - {item.Banner}\nYürüş - {item.March}\n" +
+                      $"Sürətlər qutusu - {item.GearBox}\nYanacaq növü - {item.FuelType}\nModeli - {item.ModelName}\n" +
+                      $"Marka - {item.BrandName}\nQiyməti - {item.Price}\nÖtürücü növü - {item.Transmission}\n");
             }
 
             Console.WriteLine("Dəyişikliklər uğurla əlavə edildi ! \n");
@@ -562,9 +563,9 @@ namespace Turboazmini.Main
             db.SaveChanges();
 
             Console.WriteLine($"Yeni elan uğürla əlavə olundu");
-            Console.WriteLine($"Information: Id-{announcement.Id}, Ban növü - {announcement.Banner} Yürüş - {announcement.March}" +
-                $"Sürətlər qutusu növü -{announcement.GearBox} Yanacaq növü - {announcement.FuelType} Modeli - {announcement.ModelId}" +
-                $"Marka ");
+            Console.WriteLine($"Information: Id-{announcement.Id}, Ban növü - {announcement.Banner} Yürüş - {announcement.March} " +
+                $"Sürətlər qutusu növü - {announcement.GearBox} Yanacaq növü - {announcement.FuelType} Modeli - {announcement.ModelId} " +
+                $"Marka - {model.Name} ");
 
 
 
@@ -601,17 +602,18 @@ namespace Turboazmini.Main
             {
                 Console.WriteLine($"id-{item.Id} Adı-{item.Name} ");
             }
+
             int brandId;
 
         l2:
             brandId = Helper.ReadInt("Yeni markanın İd-sini daxil edin!", "Səhv daxil etdiniz");
-            var brand = db.Models.FirstOrDefault(m=> m.Id == brandId);
+            var brand = db.Brands.FirstOrDefault(m=> m.Id == brandId);
             if ( brand == null)
             {
                 Console.WriteLine($"{brandId}- Id li Marka siyahıda yoxdur!");
                 goto l2;
             }
-            model.BrandId = brandId;
+            model.BrandId = brand.Id;
             model.Name = newModelName;
             db.SaveChanges();
             Console.WriteLine("Dəyişikliklər uğurla əlavə edildi ! \n");
@@ -670,7 +672,7 @@ namespace Turboazmini.Main
             }
             foreach( var item in query.ToList())
             {
-                Console.WriteLine($"Information Id-{item.Id} Marka-{item.BranName}");
+                Console.WriteLine($"Information Id - {item.Id} Adı - {item.Name} Marka - {item.BranName}");
             }
             Console.WriteLine("\n");
         }
@@ -707,7 +709,7 @@ namespace Turboazmini.Main
 //NEW METHOD
         private static void AddNewModel()
         {
-            if(!db.Models.Any())
+            if(!db.Brands.Any())
             {
                 Console.WriteLine("Marka siyahısı boşdur!Zəhmət olmasa Marka əlavə edin!");
                 return;
@@ -722,7 +724,7 @@ namespace Turboazmini.Main
 
         l1:
             markaId = Helper.ReadInt("Modelin markasını daxil edin", "Səhv daxil etdiniz");
-            var marka = db.Models.FirstOrDefault(m => m.Id == markaId);
+            var marka = db.Brands.FirstOrDefault(m => m.Id == markaId);
             if ( marka is null )
             {
                 Console.WriteLine("Səhv Id daxil etmisiniz");
@@ -754,8 +756,8 @@ namespace Turboazmini.Main
                 Console.WriteLine($"{markaId}-Id-li Marka tapılmadı");
                 goto l1;
             }
-            string NewMarka = Helper.ReadString("Düzəliş etmək istədiyiniz Markanın Id-sini daxil edin !", "Səhv daxil etdiniz!");
-            marka.Name = NewMarka;
+            string NewMarkaName = Helper.ReadString("Markanın yeni adını daxil edin:", "Səhv daxil etdiniz!");
+            marka.Name = NewMarkaName;
             Console.WriteLine("Dəyişikliklər uğurla əlavə edildi!!!\n");
             db.SaveChanges();
         }

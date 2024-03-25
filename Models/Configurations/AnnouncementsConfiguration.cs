@@ -6,6 +6,7 @@ using Turboazmini.Models.Entities;
 namespace Turboazmini.Models.Configurations
 {
 
+  
     public class AnnouncementsConfiguration : IEntityTypeConfiguration<Announcement>
     {
         public void Configure(EntityTypeBuilder<Announcement> builder)

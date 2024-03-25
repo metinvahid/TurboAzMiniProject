@@ -12,7 +12,7 @@ using Turboazmini.Entity;
 namespace Turboazmini.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240320220744_first")]
+    [Migration("20240324195707_first")]
     partial class first
     {
         /// <inheritdoc />
@@ -133,13 +133,13 @@ namespace Turboazmini.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<int?>("DeletedBy")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("LastModifiedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<int?>("LastModifiedBy")
                         .HasColumnType("int");
@@ -170,7 +170,7 @@ namespace Turboazmini.Migrations
                     b.HasOne("Turboazmini.Models.Entities.Brand", null)
                         .WithMany()
                         .HasForeignKey("BrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 #pragma warning restore 612, 618
